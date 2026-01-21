@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f6f8fc;
+}
+
+.pricing{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.pricing-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.badge{
+    display:inline-block;
+    background:#eef1ff;
+    color:#5b6cff;
+    padding:6px 16px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.pricing-header h2{
+    font-size:40px;
+    margin-bottom:12px;
+    color:#222;
+}
+
+.pricing-header p{
+    font-size:16px;
+    color:#777;
+}
+
+.pricing-list{
+    display:flex;
+    gap:24px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.price-card{
+    background:#fff;
+    border-radius:16px;
+    padding:32px 28px;
+    width:340px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    border:2px solid transparent;
+}
+
+.price-card.active{
+    border-color:#5b6cff;
+}
+
+.price-card h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.price{
+    margin-bottom:20px;
+}
+
+.amount{
+    font-size:36px;
+    font-weight:700;
+    color:#5b6cff;
+}
+
+.unit{
+    font-size:14px;
+    color:#777;
+}
+
+.price.contact .amount{
+    font-size:32px;
+}
+
+ul{
+    list-style:none;
+    margin-bottom:28px;
+}
+
+ul li{
+    font-size:15px;
+    margin-bottom:14px;
+    padding-left:26px;
+    position:relative;
+    color:#444;
+}
+
+ul li.yes::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#22c55e;
+}
+
+ul li.no::before{
+    content:"✖";
+    position:absolute;
+    left:0;
+    color:#9ca3af;
+}
+
+button{
+    padding:12px;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.btn-outline{
+    background:#fff;
+    border:2px solid #5b6cff;
+    color:#5b6cff;
+}
+
+.btn-primary{
+    background:#1e7bff;
+    border:none;
+    color:#fff;
+}
+
+@media (max-width:992px){
+    .pricing-list{
+        gap:32px;
+    }
+}
+
+@media (max-width:600px){
+    .pricing-header h2{
+        font-size:28px;
+    }
+
+    .price-card{
+        width:100%;
+    }
+}
